@@ -2,7 +2,7 @@
 
 In this project, I demonstrated the integration of Apache Kafka, PySpark Structured Streaming, and Machine Learning to detect fraudulent eCommerce transactions and visualise customer behaviour in real time. It was developed as part of *FIT5202: Data Processing for Big Data* at Monash University.
 
-Due to large dataset, I will put the link here: [Dataset information](https://drive.google.com/drive/u/1/folders/1YpGqiuJll28ZlYhHasONw-o4b4QAI_s9)
+Due to large dataset, I put the link this public drive: [Dataset information](https://drive.google.com/drive/u/1/folders/1YpGqiuJll28ZlYhHasONw-o4b4QAI_s9)
 
 ## Part A – Fraud Detection Model Development
 
