@@ -1,62 +1,63 @@
 🚀 Real-Time Fraud Detection & eCommerce Analytics (Assignment 2B – FIT5202)
-This project demonstrates the integration of Apache Kafka, PySpark Structured Streaming, and Machine Learning to detect fraudulent eCommerce transactions and visualise customer behaviour in real time. It was developed as part of *FIT5202: Data Processing for Big Data* at Monash University. [View project details](https://drive.google.com/drive/u/1/folders/1YpGqiuJll28ZlYhHasONw-o4b4QAI_s9)
+In this project, I demonstrated the integration of Apache Kafka, PySpark Structured Streaming, and Machine Learning to detect fraudulent eCommerce transactions and visualise customer behaviour in real time. It was developed as part of *FIT5202: Data Processing for Big Data* at Monash University.
 
-🎯 Objectives
-- Simulate real-time data streaming of browsing behaviour and transactions.
+Due to large dataset, I will put the link here: [Dataset information](https://drive.google.com/drive/u/1/folders/1YpGqiuJll28ZlYhHasONw-o4b4QAI_s9)
 
-- Ingest and process data streams with Spark Structured Streaming.
+*Part A – Fraud Detection Model Development*
 
-- Apply a trained ML fraud detection model (from Assignment 2A) for real-time predictions.
+Goal: Build machine learning models on historical eCommerce data to detect fraud.
 
-- Generate actionable visualisations for fraud monitoring and inventory planning.
+*Key Contributions:*
 
-🔑 Key Contributions
-1️⃣ Data Streaming with Kafka
+- Processed large datasets with PySpark DataFrames.
 
-- Implemented Kafka producers to simulate real-time streams of browsing and transaction data.
+- Engineered behavioural and demographic features for fraud detection.
 
-- Sent batches of 500–1000 records every 5 seconds with Unix timestamp alignment.
+- Analysed fraud patterns through statistics and visualisations.
 
-- Ensured memory efficiency by sequential row reads instead of full dataset loading.
+- Trained and evaluated Random Forest and Gradient Boosted Trees models.
 
-2️⃣ Real-Time Processing with Spark Structured Streaming
+- Selected GBT (AUC > 0.9) as best-performing model and persisted it.
 
-- Built a SparkSession with checkpointing and Melbourne timezone support.
+- Applied K-Means clustering to profile fraudster behaviours.
 
-- Defined schemas from metadata and joined static datasets (customers, products, categories) with streaming data.
+- Addressed data ethics, privacy, and security considerations.
 
-- Engineered features consistent with the ML pipeline from Part A.
+Result: Delivered a fraud detection model with high predictive accuracy and insights into fraud patterns.
 
-- Applied fraud detection model to classify transactions and persist results in Parquet format.
+*Part B – Real-Time Streaming & Prediction*
 
-Aggregated insights, e.g.:
+Goal: Deploy the trained model in a streaming environment for real-time fraud detection.
 
-- Fraud predictions every 10 seconds.
+Key Contributions:
 
-- Top 20 products in shopping carts (non-fraud) every 30 seconds.
+- Simulated real-time streams with Kafka producers (500–1000 records/5s).
 
-3️⃣ Real-Time Visualisation
+- Ingested and processed data via Spark Structured Streaming.
 
-- Developed Kafka consumers to read processed data streams.
+- Applied the GBT model to classify streaming transactions.
 
-Built live plots to monitor:
+- Persisted fraud predictions and shopping cart data in Parquet.
 
-- Fraudulent transactions over time (bar charts).
+- Built real-time dashboards: fraud counts, top products, and fraud hotspot maps.
 
-- Cumulative non-fraud product sales (line chart).
+- Delivered a live end-to-end demo integrating Kafka, Spark, and ML.
 
-Designed an advanced plot (bubble/choropleth map) to highlight fraud hotspots by location.
-
+Result: Built a working real-time fraud detection prototype with actionable fraud and inventory insights.
 🛠️ Tools & Technologies
 
-- Kafka (stream simulation & message brokering)
+- Big Data: Apache Spark (MLlib, Structured Streaming)
 
-- PySpark Structured Streaming & MLLib (real-time processing & ML inference)
+- Streaming: Apache Kafka
 
-- Pandas, Matplotlib (data visualisation)
+- ML Models: Gradient Boosted Trees, Random Forest, K-Means
 
-- Parquet (efficient storage & re-streaming)
+- Storage: JSON, Parquet
+
+- Visualisation: Matplotlib, Pandas
 
 ✅ Outcome
 
-Delivered a prototype real-time fraud detection pipeline achieving accurate fraud predictions and actionable business insights for inventory management. Strengthened expertise in streaming architectures, big data pipelines, and applied machine learning in production-like environments.
+- Developed and deployed a scalable fraud detection system from historical ML model training to real-time streaming predictions. Achieved AUC > 0.9 with Gradient Boosted Trees in Part A.
+
+- Delivered a working Kafka–Spark pipeline with live fraud detection and product monitoring in Part B. Strengthened expertise in end-to-end data pipelines, streaming architectures, and applied machine learning.
