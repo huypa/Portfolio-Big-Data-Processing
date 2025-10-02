@@ -1,13 +1,14 @@
-🚀 Real-Time Fraud Detection & eCommerce Analytics (Assignment 2B – FIT5202)
+# 🚀 Real-Time Fraud Detection & eCommerce Analytics (Assignment 2B – FIT5202)
+
 In this project, I demonstrated the integration of Apache Kafka, PySpark Structured Streaming, and Machine Learning to detect fraudulent eCommerce transactions and visualise customer behaviour in real time. It was developed as part of *FIT5202: Data Processing for Big Data* at Monash University.
 
 Due to large dataset, I will put the link here: [Dataset information](https://drive.google.com/drive/u/1/folders/1YpGqiuJll28ZlYhHasONw-o4b4QAI_s9)
 
-*Part A – Fraud Detection Model Development*
+## Part A – Fraud Detection Model Development
 
-Goal: Build machine learning models on historical eCommerce data to detect fraud.
+***Goal:*** Build machine learning models on historical eCommerce data to detect fraud.
 
-*Key Contributions:*
+### *Key Contributions:*
 
 - Processed large datasets with PySpark DataFrames.
 
@@ -23,13 +24,13 @@ Goal: Build machine learning models on historical eCommerce data to detect fraud
 
 - Addressed data ethics, privacy, and security considerations.
 
-Result: Delivered a fraud detection model with high predictive accuracy and insights into fraud patterns.
+***Result:*** Delivered a fraud detection model with high predictive accuracy and insights into fraud patterns.
 
-*Part B – Real-Time Streaming & Prediction*
+## Part B – Real-Time Streaming & Prediction*
 
-Goal: Deploy the trained model in a streaming environment for real-time fraud detection.
+***Goal:*** Deploy the trained model in a streaming environment for real-time fraud detection.
 
-Key Contributions:
+### *Key Contributions:*
 
 - Simulated real-time streams with Kafka producers (500–1000 records/5s).
 
@@ -43,8 +44,8 @@ Key Contributions:
 
 - Delivered a live end-to-end demo integrating Kafka, Spark, and ML.
 
-Result: Built a working real-time fraud detection prototype with actionable fraud and inventory insights.
-🛠️ Tools & Technologies
+***Result:*** Built a working real-time fraud detection prototype with actionable fraud and inventory insights.
+## 🛠️ Tools & Technologies
 
 - Big Data: Apache Spark (MLlib, Structured Streaming)
 
@@ -56,7 +57,7 @@ Result: Built a working real-time fraud detection prototype with actionable frau
 
 - Visualisation: Matplotlib, Pandas
 
-✅ Outcome
+## ✅ Outcome
 
 - Developed and deployed a scalable fraud detection system from historical ML model training to real-time streaming predictions. Achieved AUC > 0.9 with Gradient Boosted Trees in Part A.
 
